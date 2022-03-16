@@ -177,6 +177,11 @@ def choice_delete(request, choice_id):
 def poll_detail(request, poll_id):
     poll = get_object_or_404(Poll, id=poll_id)
 
+    if not poll.user_can_vote(request.user):
+        messages.error(
+            request, "You already voted this poll!", extra_tags='alert alert-warning alert-dismissible fade show')
+        return redirect("polls:list")
+
     if not poll.active:
         return render(request, 'polls/poll_result.html', {'poll': poll})
     loop_count = poll.choice_set.count()
