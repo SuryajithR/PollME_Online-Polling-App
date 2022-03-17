@@ -1,4 +1,4 @@
-<h1 align="center">Sponsor This Project By Following me!</h1>
+<h1 align="center">Sponsor This Project By Following me!!</h1>
 
 # PollME
 Online Polling App
