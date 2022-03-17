@@ -3,7 +3,7 @@
 
 {% block content %}
 <div class="container">
-    <h1>Polls details</h1>
+    <h1>Poll details</h1>
     {% if messages %}
     <div class="messages">
         {% for message in messages %}
@@ -37,12 +37,12 @@
           
         <div class="col">
             <br>
-            {% if poll.header_image %}
-                <img src="{{ poll.header_image.url }}" height="300px" width="500px" ><br><br>
+            {% if poll.image %}
+                <img src="{{ poll.image.url }}" height="300px" width="500px" ><br><br>
             {% endif %}
         </div>
-        <div class="col">
-          </div>
+        <!-- <div class="col">
+          </div> -->
         </div>
 
     </div>

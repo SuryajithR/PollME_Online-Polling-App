@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 offset-sm-2">
-            <h1 class="text-center mt-3 mb-3">Welcome to polls List!</h1><br>
+            <h1 class="text-center mt-3 mb-3">Polls List!</h1><br>
             {% if messages %}
             <div class="messages">
                 {% for message in messages %}
@@ -54,7 +54,7 @@
                     <a href="{% url 'polls:edit' poll.id %}" class="mr-3" data-toggle="tooltip" data-placement="top"
                         title="Edit Poll"><i class="fas fa-pencil-alt float-right btn btn-primary btn-sm mr-1"></i></a>
                     {% endif %}
-                    {% if not poll.user_can_vote and request.user != poll.owner  %}
+                    {% if not poll.user_can_vote  %}
                     <a href="{% url 'polls:pollresult' poll.id %}" class="mr-3" data-toggle="tooltip" data-placement="top"
                     title="View Results"><i class="fas fa-eye float-right btn btn-primary btn-sm mr-1"></i></a>
                     {% endif %}

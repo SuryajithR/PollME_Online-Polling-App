@@ -20,7 +20,7 @@ class PollAddForm(forms.ModelForm):
 class EditPollForm(forms.ModelForm):
     class Meta:
         model = Poll
-        fields = ['text',  'image']
+        fields = ['text', 'image']
         widgets = {
             'text': forms.Textarea(attrs={'class': 'form-control', 'rows': 5, 'cols': 20}),
         }

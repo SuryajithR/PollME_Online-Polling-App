@@ -19,7 +19,7 @@
             {% if request.user.is_authenticated %}
             <div class="dropdown">
                 <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <a>{{ request.user.username }}</a> <!-- extra -- delete after testing -->
+                    <a>{{ request.user.username }}</a> 
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="nav-link" href="{% url 'polls:list_by_user' %}">My Polls</a>
