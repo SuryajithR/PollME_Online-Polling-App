@@ -16,7 +16,7 @@ Online poll app using django is a full featured polling app. You have to registe
 ## 1. Clone this Repository, PollME
 To clone this repository open your command prompt / terminal, and type
 ```
-git clone https://github.com/SuryajithR/PollME
+git clone https://github.com/SuryajithR/PollME.git
 ```
 
 ## 2. Edit or Add Files
