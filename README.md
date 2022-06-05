@@ -6,6 +6,7 @@ Live Online Polling App
 <p align="left">
   <a href="https://www.python.org">
     <img src="http://ForTheBadge.com/images/badges/made-with-python.svg">
+    
 
   </a>
 </p>
